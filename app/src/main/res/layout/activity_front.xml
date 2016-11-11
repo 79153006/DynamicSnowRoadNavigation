@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:src="@drawable/logo_MAP"
+            android:src="@drawable/logo_map"
             android:scaleType="fitCenter"
             android:background="@drawable/color_emerald"
             android:layout_margin="@dimen/front_button_margin"

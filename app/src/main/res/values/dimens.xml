@@ -3,4 +3,5 @@
     <dimen name="activity_horizontal_margin">12dp</dimen>
     <dimen name="activity_vertical_margin">12dp</dimen>
     <dimen name="front_button_margin">1dp</dimen>
+    <dimen name="run_margin">0dp</dimen>
 </resources>
