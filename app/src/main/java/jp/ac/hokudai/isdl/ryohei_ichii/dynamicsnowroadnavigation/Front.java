@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Front extends AppCompatActivity {
 
@@ -13,10 +14,10 @@ public class Front extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front);
 
-        Button btnrun = (Button)this.findViewById(R.id.button_run);
-        Button btnmap = (Button)this.findViewById(R.id.button_map);
-        Button btninfo = (Button)this.findViewById(R.id.button_info);
-        Button btnpref = (Button)this.findViewById(R.id.button_preference);
+        ImageButton btnrun = (ImageButton)this.findViewById(R.id.button_run);
+        ImageButton btnmap = (ImageButton)this.findViewById(R.id.button_map);
+        ImageButton btninfo = (ImageButton)this.findViewById(R.id.button_info);
+        ImageButton btnpref = (ImageButton)this.findViewById(R.id.button_preference);
 
         btnrun.setOnClickListener(new View.OnClickListener() {
             @Override
