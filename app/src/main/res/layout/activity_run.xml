@@ -15,11 +15,18 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="15"
+            android:orientation="vertical"
     >
         <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
         >
+            <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
             <android.support.v7.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
@@ -36,13 +43,6 @@
             />
 
         </RelativeLayout>
-
-        <fragment
-                android:id="@+id/map"
-                android:name="com.google.android.gms.maps.MapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-        />
 
     </LinearLayout>
     <LinearLayout
