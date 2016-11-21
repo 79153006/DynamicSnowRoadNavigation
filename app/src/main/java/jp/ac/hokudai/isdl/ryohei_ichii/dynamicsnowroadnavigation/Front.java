@@ -64,11 +64,13 @@ public class Front extends AppCompatActivity {
     //permission確認
     public void checkPermission() {
         // GPS利用の許可がなかった場合に許可を求める
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+        } else {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
                 ActivityCompat.requestPermissions(Front.this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION);
-            } else {
+            }else{
                 Toast toast = Toast.makeText(this, "Runモードの実行には位置情報の利用許可が必要です", Toast.LENGTH_SHORT);
                 toast.show();
             }
